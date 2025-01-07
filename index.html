@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Adivinhar o número de 1 a 100</title>
+</head>
+<body>
+
+<script>
+
+
+
+function secreto(){
+
+ let numeroAleatorio = Math.floor(Math.random() * 100 + 1);
+ //math.random gera um numero decimal
+ //mathrandom * 100 multiplica o numero gerado por 100, faznedo com que o numero seja de 1 a 100
+ //e logo após incrementa mais + 1 
+ //tudo isso para gerar um numero inteiro aleatorio.
+ 
+let acertou = false; 
+
+while(!acertou){
+
+   let palpite = prompt("Digite um número de  a 100");//a cada interação pega o palpite do usuario e o compara com o numero aleatorio.
+
+   if(palpite === null){alert("Você cancelou o jogo, até a próxima!"); break;}
+
+    if(palpite > numeroAleatorio){
+       alert("O Número digitado é maior que o numero secreto.");//mensagem caso o numero digitado seja maior
+     
+}
+   else if(palpite < numeroAleatorio){
+      alert("O Número é menor que o número secreto.")//mensagem caso o numero digitado sema menor
+  
+}
+   else{
+     alert("Parabéns você acertou!")//mensagem para o ganhador do jogo
+     acertou = true;
+     alert("FIM DO JOGO")
+   }
+
+}
+
+}
+
+secreto();
+
+//a cada interação deste loop while, este codigo pede duma nova sugestão de que numero o usuario acha que esta escondido, sempre dando dica se o numero digitado é menor ou maior do doque o numero secreto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
