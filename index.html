@@ -8,16 +8,10 @@
 <body>
 
 <script>
-
-
-
 function secreto(){
 
  let numeroAleatorio = Math.floor(Math.random() * 100 + 1);
- //math.random gera um numero decimal
- //mathrandom * 100 multiplica o numero gerado por 100, faznedo com que o numero seja de 1 a 100
- //e logo após incrementa mais + 1 
- //tudo isso para gerar um numero inteiro aleatorio.
+//gerador de numero inteiro aleatório 
  
 let acertou = false; 
 
@@ -47,7 +41,8 @@ while(!acertou){
 
 secreto();
 
-//a cada interação deste loop while, este codigo pede duma nova sugestão de que numero o usuario acha que esta escondido, sempre dando dica se o numero digitado é menor ou maior do doque o numero secreto.
+//a cada interação deste loop, o codigo pede uma nova sugestão de número 
+// sempre dando dica se o numero digitado é menor ou maior do doque o numero secreto.
 
 
 
